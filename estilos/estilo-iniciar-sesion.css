@@ -1,0 +1,65 @@
+.olvidaste{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.olvidaste a{
+    text-decoration: none;
+    padding: 8px;
+}
+
+.olvidaste a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-image: url(../imagenes/pareja\,iniciosesion4.jpg);
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en la pantalla */
+}
+
+.ayuda{
+    margin: 0;
+}
+
+.ayuda a{
+    text-decoration: none;
+}
+
+.ayuda a:hover{
+    text-decoration: underline
+}
+
+@media (max-width:600px){
+main{
+    background-image: none;
+    height: 600px;
+}
+
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.caja-gris {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.olvidaste a {
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Milagros Energeticos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/estilos/style.css">
+<link rel="stylesheet" href="/estilos/estilo-turnos.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="/imagenes/logo.png">
+</head>
+<body>
+  
+<header>
+  <div w3-include-html="/vistas/header.html"></div>
+</header>
+<main>
+  <!-- Seleccionar tratamiento -->
+  <div class="container mySlides">
+    <h1>Solicitar turno</h1>
+    <br>
+    <div class="progress">
+      <div class="step active">
+        <span class="step-label">Tratamiento</span>
+      </div>
+      <div class="step">
+        <span class="step-label">Fecha y Hora</span>
+      </div>
+      <div class="step">
+        <span class="step-label">Confirmar</span>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-bar-fill" style="width: 33%"></div>
+    </div>
+    <br>
+    <h2>Tipo de tratamiento</h2>
+    <p>Selecciona el tipo de tratamiento que se va a atender:</p>
+    <div class="opciones-tratamiento">
+      <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+        <div class="w3-container">
+          <h5>Ventosas</h5>
+          <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+        <div class="w3-container">
+          <h5>Acupuntura</h5>
+          <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+        </div>
+
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+        <div class="w3-container">
+          <h5>Masajes</h5>
+          <p class="w3-opacity">Profesional: Gabriela Godoy</p>
+        </div>
+
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+        <div class="w3-container">
+          <h5>Kinesiologia</h5>
+          <p class="w3-opacity">Profesional: Marcos Venegas</p>
+
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+        <div class="w3-container">
+          <h5>Quiropraxia</h5>
+          <p class="w3-opacity">Profesional: Pedro Gonzalez</p>
+        </div>
+
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+        <div class="w3-container">
+          <h5>Moxibustion</h5>
+          <p class="w3-opacity">Profesional: Lucia Gutierrez</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="buttons">
+
+      <a href="../index.html"><button class="w3-button w3-light-grey" onclick="">Volver</button></a>
+  <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+    </div>
+    </div>
+
+<!-- seleccionar fecha y hora -->
+<div class="container mySlides">
+<h1>Solicitar turno</h1>
+<br>
+<div class="progress">
+  <div class="step active">
+    <span class="step-label">Tratamiento</span>
+  </div>
+  <div class="step"  style="background-color: #7BB094 ;">
+    <span class="step-label">Fecha y Hora</span>
+  </div>
+  <div class="step">
+    <span class="step-label">Confirmar</span>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-bar-fill" style="width: 66%"></div>
+</div>
+<br>
+<h2>Fecha y Hora</h2>
+<p>Selecciona el dia y horario que se va a atender:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Turnos Disponibles</th>
+          <th><button>&lt;</button></th>
+          <th>Lunes<br>08/07</th>
+          <th>Martes<br>09/07</th>
+          <th>Miércoles<br>10/07</th>
+          <th>Jueves<br>11/07</th>
+          <th>Viernes<br>12/07</th>
+          <th><button>&gt;</button></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td data-label="Turnos Disponibles">13:00 - 14:00</td>
+          <td data-label="">&nbsp;</td>
+          <td data-label="Lunes 08/07" class="available">13:00</td>
+          <td data-label="Martes 09/07">&nbsp;</td>
+          <td data-label="Miércoles 10/07" class="available">13:15</td>
+          <td data-label="Jueves 11/07">&nbsp;</td>
+          <td data-label="Viernes 12/07" class="available">13:30</td>
+          <td data-label="">&nbsp;</td>
+      </tr>
+      <tr>
+          <td data-label="Turnos Disponibles">14:00 - 15:00</td>
+          <td data-label="">&nbsp;</td>
+          <td data-label="Lunes 08/07" class="available">14:00</td>
+          <td data-label="Martes 09/07">&nbsp;</td>
+          <td data-label="Miércoles 10/07">&nbsp;</td>
+          <td data-label="Jueves 11/07">&nbsp;</td>
+          <td data-label="Viernes 12/07" class="available">14:30</td>
+          <td data-label="">&nbsp;</td>
+      </tr>
+      <tr>
+          <td data-label="Turnos Disponibles">15:00 - 16:00</td>
+          <td data-label="">&nbsp;</td>
+          <td data-label="Lunes 08/07" class="available">15:00</td>
+          <td data-label="Martes 09/07">&nbsp;</td>
+          <td data-label="Miércoles 10/07">&nbsp;</td>
+          <td data-label="Jueves 11/07">&nbsp;</td>
+          <td data-label="Viernes 12/07" class="available">15:45</td>
+          <td data-label="">&nbsp;</td>
+      </tr>
+      <tr>
+          <td data-label="Turnos Disponibles">16:00 - 17:00</td>
+          <td data-label="">&nbsp;</td>
+          <td data-label="Lunes 08/07">&nbsp;</td>
+          <td data-label="Martes 09/07" class="available">16:00</td>
+          <td data-label="Miércoles 10/07">&nbsp;</td>
+          <td data-label="Jueves 11/07" class="available">16:15</td>
+          <td data-label="Viernes 12/07">&nbsp;</td>
+          <td data-label="">&nbsp;</td>
+      </tr>
+  </tbody>
+</table>
+
+<div class="buttons">
+  
+  <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Volver</button>
+<button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+</div>
+</div>
+<!-- Seleccionar confirmacion -->
+<div class="container mySlides ">
+<h1>Solicitar turno</h1>
+<br>
+<div class="progress">
+  <div class="step active">
+    <span class="step-label">Tratamiento</span>
+  </div>
+  <div class="step"  style="background-color: #7BB094 ;">
+    <span class="step-label">Fecha y Hora</span>
+  </div>
+  <div class="step active">
+    <span class="step-label">Confirmar</span>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-bar-fill" style="width: 100%"></div>
+</div>
+<br>
+<h2>Confirmación del turno</h2>
+
+<div class="confirmacion-turno">
+<p>Tratamiento: <b>Ventosas</b></p>
+<p>Profesional: <b>Milagros Pereyra</b></p>
+<p>Fecha y Hora: <b>Lunes 8/7/2024 13:00hs</b></p>
+<p>El costo de la consulta es de $15000</p>
+</div>
+
+<div class="buttons">
+ 
+  <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Volver</button>
+<button class="w3-button w3-light-grey" onclick="" id="openPopupBtn">Finalizar</button>
+</div>
+<br>
+<div  class="w3-center">
+<a href="../index.html"><button class="w3-button w3-light-grey" onclick="">Cancelar solicititud</button></a>
+</div> 
+</div>
+
+<div id="popup" class="popup">
+
+<h4>Turno confirmado con éxito ✔️</h4>
+<a href="../index.html"><button class="closeBtn" onclick="">Volver al inicio</button></a>
+</div>
+
+<div id="overlay" class="overlay"></div>
+</main>
+<footer>
+  <div w3-include-html="/vistas/footer.html"></div>
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  w3.includeHTML();
+</script>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-red", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-red";
+  }
+  </script>
+
+<script>
+  // Add event listeners to pet options
+  const petOptions = document.querySelectorAll('.pet-option');
+  petOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      // Remove active class from all options
+      petOptions.forEach(o => o.classList.remove('active'));
+
+      // Add active class to clicked option
+      option.classList.add('active');
+    });
+  });
+
+  // Add event listener to "Volver" button
+  const volverButton = document.getElementById('volver');
+  volverButton.addEventListener('click', () => {
+    // Go back to previous step
+    // (Implement logic for navigation)
+  });
+
+  // Add event listener to "Siguiente" button
+  const siguienteButton = document.getElementById('siguiente');
+  siguienteButton.addEventListener('click', () => {
+    // Proceed to next step
+    // (Implement logic for navigation)
+  });
+</script>
+<script>
+
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+
+
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+
+
+</script>
+
+<script>
+  // Seleccionar todos los elementos con la clase 'color-box'
+  const boxes = document.querySelectorAll('.opcion-tratamiento');
+
+  // Añadir un evento de clic a cada elemento
+  boxes.forEach(box => {
+    box.addEventListener('click', () => {
+      box.classList.toggle('clicked');
+    });
+  });
+
+  // Seleccionar todos los elementos con la clase 'color-box'
+  const boxes2 = document.querySelectorAll('.available');
+
+  // Añadir un evento de clic a cada elemento
+  boxes2.forEach(box => {
+    box.addEventListener('click', () => {
+      box.classList.toggle('clicked');
+    });
+  });
+  
+
+
+</script>
+
+<script>
+// Obtén los elementos del DOM
+const openPopupBtn = document.getElementById('openPopupBtn');
+const popup = document.getElementById('popup');
+const overlay = document.getElementById('overlay');
+
+// Función para abrir el popup
+openPopupBtn.onclick = function() {
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+};
+
+// Función para cerrar el popup
+function closePopup() {
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+}
+</script>
+</body>
+</html>

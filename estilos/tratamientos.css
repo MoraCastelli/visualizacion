@@ -1,0 +1,82 @@
+.slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide {
+    display: flex;
+    overflow: hidden;
+    width: 75%;
+  }
+  .slide-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .w3-card {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    margin-right: 10px;
+  }
+  .arrow {
+    cursor: pointer;
+  }
+
+  .w3-col {
+    flex: 0 0 auto;
+    width: 33.33%; /* Mantén el tamaño original de los divs */
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  #prev {
+    left: 0;
+  }
+  
+  #next {
+    right: 0;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .small-card {
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  .main-card {
+    flex: 2;
+    max-width: 400px;
+  }
+  
+  .w3-card img {
+    width: 100%;
+  }
+  
+  
+
+  

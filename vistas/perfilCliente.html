@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milagros Energeticos</title>
+    <link rel="stylesheet" href="/estilos/estilo-iniciar-sesion.css">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/imagenes/logo.png">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawCharts);
+
+        function drawCharts() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Acupuntura', 11],
+                ['Ventosas', 2],
+                ['Moxibustion', 2],
+                ['Masajes', 2],
+                ['Quiropraxia', 7]
+            ]);
+
+            var options = {
+                title: 'Tratamientos'
+            };
+
+            var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
+            chart1.draw(data, options);
+
+            var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+            chart2.draw(data, options);
+
+            var chart3 = new google.visualization.PieChart(document.getElementById('piechart3'));
+            chart3.draw(data, options);
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #7AA693;
+            padding: 20px;
+            color: #fff;
+            text-align: left;
+        }
+        .header img {
+            width: 100px;
+        }
+        .main {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .charts {
+            display: flex;
+            justify-content: space-between;
+        }
+        .chart {
+            width: 30%;
+        }
+        .sidebar {
+            margin-top: 20px;
+        }
+        .sidebar .item {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #7AA693;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div w3-include-html="/vistas/header.html"></div>
+    </header>
+    <main>
+        <div class="main">
+            <h1>Perfil completo del paciente</h1>
+            <h2>Estadísticas de seguimiento</h2>
+            <div class="charts">
+                <div id="piechart1" class="chart"></div>
+                <div id="piechart2" class="chart"></div>
+                <div id="piechart3" class="chart"></div>
+            </div>
+            <div class="sidebar">
+                <div class="item">Tratamiento 29-06</div>
+                <div class="item">Tratamiento 7-07</div>
+                <div class="item">Tratamiento 14-07</div>
+                <div class="item">Tratamiento 21-07</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+         <div w3-include-html="/vistas/footer.html"></div>
+    </footer>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="/script/inicioSesion.js"></script>
+    <script src="/scripts/home.js"></script>
+    <script>
+      w3.includeHTML();
+    </script>
+    </body>
+    </html>
+    

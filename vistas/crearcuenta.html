@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Milagros Energeticos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../estilos/style.css">
+<link rel="stylesheet" href="../estilos/estilo-iniciar-sesion.css">
+<link rel="stylesheet" href="../estilos/estilo-crear-cuenta.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../imagenes/logo.png">
+
+<header>
+  <div w3-include-html="/vistas/header.html"></div>
+</header>
+
+<main>
+
+<div style="height:100vh;">
+    <div class="w3-card-4 w3-container w3-padding-large w3-light-grey caja-gris" style="max-width:400px; height:100vh;">
+      <h3 class="w3-center" style="margin-top: 30px;">CREAR CUENTA</h3>
+      <div style="margin-top:30px">
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Nombre Completo" required name="nombre"></p>
+            <label for="fechaNac" >Fecha de nacimiento</label>
+            <p><input class="w3-input w3-border" type="date" required name="fechaNac"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-border" type="password" placeholder="Contraseña" required name="Password"></p>
+          <p><input class="w3-input w3-border" type="password" placeholder="Repetir contraseña" required name="Password"></p>
+          <p>
+            <button class="w3-button w3-black w3-block" type="submit" style="margin-bottom: 10px;">
+              CREAR CUENTA
+            </button>
+            <input type="checkbox"> Acepto terminos y condiciones
+          </p>
+          
+          <div class="w3-center">
+            <img src="/imagenes/division.jpg" alt="">
+          </div>
+        <p class="w3-center ayuda"><a href="#" >¿Necesitás ayuda?
+        </a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div w3-include-html="/vistas/footer.html"></div>
+</footer>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="/script/inicioSesion.js"></script>
+<script src="/scripts/home.js"></script>
+<script>
+  w3.includeHTML();
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+
+
+
+main {
+  background-color: #f2f2f2;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+
+.step.active {
+  background-color:#7BB094 ;
+  width: 40% !important;
+}
+
+.step{
+  width: 40% !important;
+  margin:5px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.progress-bar-fill {
+  height: 4px;
+  background-color: #7BB094 ;
+  border-radius: 5px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+
+.opciones-tratamiento {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.opcion-tratamiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.opcion-tratamiento:hover {
+  background-color: #f2f2f2;
+}
+
+.opcion-tratamiento.clicked {
+  background-color:#7BB094 ;
+}
+
+.available.clicked {
+  background-color:#7BB094 ;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*turnos fecha y hora*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.available {
+  color: blue;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+
+  h1{
+    font-size: 25px !important;
+  }
+
+h2{
+  font-size: 20px !important;
+}
+ 
+p{
+  font-size: 15px !important;
+}
+  .step{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  table{
+    font-size: 12px !important;
+  }
+
+  thead {
+      display: none;
+  }
+  tbody, tr, td, th {
+      display: block;
+      width: 100%;
+  }
+  tr {
+      margin-bottom: 10px;
+  }
+  td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+      padding: 10px;
+  }
+  td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 10px;
+      text-align: left;
+      font-weight: bold;
+  }
+ 
+
+}
+
+
+/* Estilos para el popup */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Fondo oscuro detrás del popup */
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Estilos para el botón de volver a inicio */
+.closeBtn {
+  background-color:#7BB094 ;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}

@@ -1,0 +1,123 @@
+
+* {font-family: "Raleway", sans-serif;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+.logo{
+    width: 120px !important;
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    .logo{
+        width: 60px !important;
+        height: auto !important;
+    }
+}
+
+#myNavbar{
+    background-color: #7BB094 !important;
+}
+
+.menu-links{
+    display: flex;
+   align-items: center;
+   margin-top: 5px;
+   padding: 20px;
+}
+
+.w3-card img{
+    height: 200px;
+    width: auto;
+}
+
+#tratamientos{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.imagen-hero{
+   
+    width: 100%;
+    margin-bottom: 80px;
+    height: auto;
+} 
+
+
+footer{
+    background-color: #7BB094 !important;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    margin: 0 !important;
+    width: 100% !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+}
+
+
+footer p{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.medios-de-pago img{
+    width: 55px;
+    height: auto;
+
+}
+
+.redes {
+    text-align: center;
+}
+
+.medios-de-pago{
+    text-align: center;
+    
+}
+
+footer div{
+    margin-top: 30px;
+}
+
+@media (width:800px){
+   footer{
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+
+}

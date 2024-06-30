@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Milagros Energeticos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/estilos/style.css">
+  <link rel="stylesheet" href="/estilos/tratamientos.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="/imagenes/logo.png">
+  </head>
+  <header>
+    <div w3-include-html="/vistas/header.html"></div>
+  </header>
+
+  <main>
+    <div class="w3-container" id="tratamientos">
+      <br>
+      <h1 class="w3-center">TRATAMIENTOS</h1>
+      <div class="slide-container">
+        <div class="w3-left w3-button w3-light-grey arrow w3-padding-16 " onclick="moveSlide(-1)">&#10094;</div>
+        <div class="slide">
+          <div class="slide-inner">
+            <div class="w3-card">
+              <img src="/imagenes/ventosas.jpg" alt="ventosas" style="width:100%">
+              <div class="w3-container">
+                <h3>Ventosas</h3>
+                <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+                <p>Técnica utilizada para mejorar la circulación sanguínea en una región del cuerpo a través de ventosas neumáticas</p>
+                <p><button class="w3-button w3-light-grey w3-block">Ver más</button></p>
+              </div>
+            </div>
+            <div class="w3-card ">
+              <img src="/imagenes/acupuntura.jpg" alt="acupuntura" style="width:100%">
+              <div class="w3-container">
+                <h3>Acupuntura</h3>
+                <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+                <p>Inserción de agujas muy finas en distintas regiones específicas del cuerpo con la finalidad de restablecer el equilibrio bioeléctrico del organismo.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Ver más</button></p>
+              </div>
+            </div>
+            <div class="w3-card">
+              <img src="/imagenes/masajes.jpg" alt="masajes" style="width:100%">
+              <div class="w3-container">
+                <h3>Masajes</h3>
+                <p class="w3-opacity">Profesional: Gabriela Godoy</p>
+                <p>El masaje se realiza con las manos del terapeuta realizando gestos sobre la piel del paciente como apretar, traccionar, exprimir, empujar.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Ver más</button></p>
+              </div>
+            </div>
+            <div class="w3-card">
+              <img src="/imagenes/kinesiologia.jpg" alt="kinesiologia" style="width:100%">
+              <div class="w3-container">
+                <h3>Kinesiologia</h3>
+                <p class="w3-opacity">Profesional: Marcos Venegas</p>
+                <p>Diseño de programas de ejercicios para prevenir lesiones y mejorar el rendimiento atlético y la función corporal general.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Ver más</button></p>
+              </div>
+            </div>
+            <div class="w3-card">
+              <img src="/imagenes/Quiropraxia.jpg" alt="Quiropraxia" style="width:100%">
+              <div class="w3-container">
+                <h3>Quiropraxia</h3>
+                <p class="w3-opacity">Profesional: Pedro Gonzalez</p>
+                <p>Consiste en manipulaciones específicas de la columna vertebral, reequilibrio neurológico, correcciones musculares, y técnicas de liberación emocional.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Ver más</button></p>
+              </div>
+            </div>
+            <div class="w3-card">
+              <img src="/imagenes/moxibustion.png" alt="moxibustion" style="width:100%">
+              <div class="w3-container">
+                <h3>Moxibustion</h3>
+                <p class="w3-opacity">Profesional: Lucia Gutierrez</p>
+                <p>Aplicación de calor en diferentes partes del cuerpo como método para estimular las diferentes partes con el fin de curar enfermedades o dolencias.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Ver más</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-right w3-button w3-light-grey arrow w3-padding-16" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div w3-include-html="/vistas/footer.html"></div>
+  </footer>
+  
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script>
+    w3.includeHTML();
+  </script>
+  <script src="/scripts/home.js"></script>
+  </body>
+  </html>

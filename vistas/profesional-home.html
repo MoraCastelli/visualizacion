@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./estilos/style.css">
+        <title>Milagros Energeticos</title>
+    </head>
+    <body>
+        <div>
+        <div class="w3-bar w3-card" id="myNavbar">
+          <a href="../index.html"><img class="logo" src="/imagenes/logo.png" alt=""></a>
+            <div class="w3-right w3-hide-small menu-links">
+            <a href="turnos.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> TURNOS</a>
+            <a href="aboutUs.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
+            <a href="tratamientos.html" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i> TRATAMIENTOS</a>
+            <a href="perfilCliente.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> PACIENTES</a>
+            <a href="perfil.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> VER PERFIL</a>
+          </div>
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      
+      <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ×</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">TRATAMIENTOS</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">VER PERFIL</a>
+      </nav>
+      <div id="home">
+        <img class="w3-right imagen-hero" src="/imagenes/masajes-imagenhero2.jpg " alt="masajes">
+    </div>
+</header>
+<main>
+  <div w3-include-html="/vistas/aboutUsIndex.html"></div>
+  <div w3-include-html="/vistas/tratamientosIndex.html"></div>
+  <div w3-include-html="/vistas/contactUsIndex.html"></div>
+</main>
+<footer>
+  <div w3-include-html="footer.html"></div>
+</footer>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  w3.includeHTML();
+</script>
+<script src="script\home.js"></script>
+</body>
+</html>
